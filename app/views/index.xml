@@ -1,0 +1,58 @@
+<Alloy> 
+		<NavigationWindow id="mainNavGroup" platform="ios">
+			<Window id="repo" onOpen="loadTypeList">
+				<LeftNavButton>
+                	<Button title="Repos" onClick="openLeft"></Button>
+            	</LeftNavButton>
+				
+				<TableView id="typesTableView" onClick="loadEntries"></TableView>
+				<Toolbar platform="ios" bottom="0" borderTop="true" borderBottom="false">
+
+					<!-- The Items tag sets the Toolbar.items property. -->
+					<Items>
+						<FlexSpace/>
+						<Label id="usarnameLbl">Logged as</Label>
+						<Label id="username" />
+						<FlexSpace/>
+						
+						<Button id="logout" title="Log Out" style="Ti.UI.iPhone.SystemButtonStyle.DONE" onClick="logout"/>
+					</Items>
+
+					<!-- Place additional views for the Toolbar here. -->
+
+				</Toolbar>
+			</Window>
+		</NavigationWindow>
+	
+	<Window id="leftWindow" platform="ios">
+        <TableView id="leftTable" rowHeight="70" >
+            
+        <!-- static repo list..now loaded from server
+            <TableViewRow repo="BELSPO" header="DCH-RP Repositories">
+				<ImageView image="belspo.jpg"/>
+				<Label>BELSPO PoC</Label>
+            </TableViewRow>
+            <TableViewRow  repo="ICCU">
+            		<ImageView image="ICCU.jpg"/>
+            		<Label>ICCU PoC</Label>
+            </TableViewRow>
+            <TableViewRow repo="deroberto2" header="INDICATE Use Cases">
+            		<ImageView image="deroberto.jpg"/>
+            		<Label>De Roberto DR</Label>
+            </TableViewRow>
+            <TableViewRow  repo="medrepo">
+            		<ImageView image="medrepo.jpg"/>
+            		<Label>MED Repo</Label>
+            </TableViewRow>
+            <TableViewRow repo="myTestRepo">
+            		<ImageView image="china-relics.png"/>
+            		<Label>China Relics Repo</Label>
+            </TableViewRow>
+            <TableViewRow repo="CULTNAT">
+            		<ImageView image="CULTNAT.jpg"/>
+            		<Label>CULTNAT Collections</Label>
+            </TableViewRow>
+         -->
+        </TableView>
+    </Window>
+</Alloy>

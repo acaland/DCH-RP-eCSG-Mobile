@@ -1,0 +1,37 @@
+"#usarnameLbl": {
+	//color: "#333333",
+	font: {
+		fontSize: "12dp"
+	}
+},
+"#username": {
+	color: "#666666",
+	font: {
+		fontWeight: "bold",
+		fontSize: "12dp"
+	}
+},
+"#typesTableView": {
+	bottom: "44dp"
+},
+"#leftTable": {
+	top: 20
+},
+"#leftWindow": {
+	top: 0,
+	backgroundColor: "white",
+	//fullscreen: true,
+	//statusBarStyle: Titanium.UI.iPhone.StatusBar.LIGHT_CONTENT
+},
+"ImageView": {
+	left: 5,
+	height: 60,
+	width: 60,
+	borderRadius: 5
+},
+"TableViewRow": {
+	layout: "horizontal"
+},
+"Label": {
+	left: 5
+}

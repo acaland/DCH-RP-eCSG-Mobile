@@ -1,0 +1,63 @@
+".container": {
+	backgroundColor: "white",
+	layout: "vertical"
+},
+"#scrollableView": {
+	showPagingControl: "true",
+	height: "330",
+	//overlayEnabled: true,
+	//pagingControlAlpha: 0.3,
+	pagingControlColor: "gray"
+},
+"#welcomeImg": {
+	top: 20,
+	height: "20%"
+},
+"View": {
+	layout: "vertical",
+	width: "96%"
+	//borderWidth: 1	
+}
+"#title": {
+	top: "1%",
+	font: {
+		fontWeight: "bold",
+		fontSize: "16dp"
+	},
+	textAlign: "center"
+},
+"Label": {
+	top: "5%",
+	font: {
+		fontSize: "13dp"
+	}
+},
+"Button": {
+	top: "2%"
+},
+"#signInBtn" : {
+	height: "50dp"
+},
+"#registerToGrIDP" : {
+	height: "50dp"
+},
+"#welcomeSwitchView" : {
+	top: 0,
+	layout: "absolute",
+	height: "50dp"
+	//borderWidth: 1
+},
+"#welcomeSwitch" : {
+	right: "0",
+	top: 4
+}, 
+"#switchLabel": {
+	left: "0",
+	top: 2
+	//borderWidth: 1
+},
+"#gotoESsg": {
+	top: "2%",
+	height: "50dp",
+	width: "84dp"
+}

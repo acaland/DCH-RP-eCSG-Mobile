@@ -1,0 +1,25 @@
+<Alloy>
+	<Window class="container">
+		<ImageView id="welcomeImg" image="DCHRP_logo.png"></ImageView>
+		<ScrollableView id="scrollableView" >
+			<View id="pag1">
+				<Label id="title">Welcome to the DCH-RP e-Culture Science Gateway Mobile</Label>
+				<Label id="desc">This app allows users to run on a mobile appliance the scientific applications contained in the Science Gateway of the DCH-RP Project.</Label>
+				<Label id="subdesc">For more information on the DCH-RP e-Culture Science Gateway, visit</Label>
+				<Button id="gotoESsg" backgroundImage="DCHRP_logo.png" onClick="gotoESprojectSG"/>
+				
+			</View>
+			<View id="pag2">
+				<Label>The access to the DCH-RP e-Culture Science Gateway requires federated credentials issued by an Identity Provider. If the organisation you belong to has an Identity Provider registered in an official Identity Federation, click on Sign In button below and select your federation and provider.</Label>
+				<Button id="signInBtn" image="signInBtn.png" title="Sign In" onClick="signIn"/>
+				<Label>Otherwise you can get federated credentials registering to the open Identity Provider which belongs to the GrIDP federation</Label>
+				<Button id="registerToGrIDP" image="registerBtn.png" title="Register" onClick="register"/>
+			</View>
+		</ScrollableView>
+		<View id="welcomeSwitchView">
+			<Label id="switchLabel">Do not show this welcome page again</Label>
+			<Switch id="welcomeSwitch" onChange="dismissWelcomeScreen"/>
+		</View>
+
+	</Window>
+</Alloy>

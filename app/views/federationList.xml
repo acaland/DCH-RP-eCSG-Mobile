@@ -1,0 +1,9 @@
+<Alloy>
+	<Window title = "Choose a Federation" class="container">
+		<RightNavButton>
+			<Button onClick="openWelcomeScreen" systemButton="Titanium.UI.iPhone.SystemButton.INFO_LIGHT"/>
+		</RightNavButton>
+		<TableView id="federationsTableView" onClick="openIdpList">		
+		</TableView>
+	</Window>
+</Alloy>
